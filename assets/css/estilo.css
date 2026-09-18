@@ -1,0 +1,145 @@
+* {
+    /* asterisco é um seletor universal (aplica regras de estilo a todos os elementos da página) */
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+header {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: .5rem;
+    background-color: #674ea7;
+    color: white;
+}
+
+.titulo {
+    flex: 1;
+    color: white;
+    text-align: center;
+}
+
+/* menu lateral */
+nav {
+    height: 100vh;
+    width: 15rem;
+    background-color: #eee;
+    padding: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+.opcao {
+    display: flex;
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    background-color: #ddd;
+    color: black;
+}
+
+.form-pesquisa-filtro {
+    position: absolute;
+    top: 5rem;
+    right: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex: 1;
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    /* margin: 1rem; */
+    border-radius: .5rem;
+    width: 15rem;
+    box-shadow: .3rem .3rem 0.3rem 0.03rem #eee;
+    height: fit-content;
+}
+
+.imagem-do-cartao {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 2/1.3;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.corpo-do-cartao {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    margin-top: .5rem;
+    gap: .5rem;
+}
+
+.nome-da-opcao {
+    font-weight: bold;
+}
+
+.descricao-da-opcao {
+    font-style: italic;
+    color: grey;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: .8rem;
+    padding: 1rem;
+    margin-top: 2.5rem;
+}
+
+@media (max-width: 576px) { /* EXTRA SMALL - até 576px */
+    .titulo {
+        opacity: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .form-pesquisa-filtro {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        /* eixo Y */
+        align-content: center;
+        /* deixar o eixo Y alinhado */
+    }
+}
+
+@media (max-width: 767px) { /* SMALL - até 767px */
+
+    nav {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        /* eixo Y */
+        align-content: center;
+        /* deixar o eixo Y alinhado */
+    }
+} /* responsividade css puro */
