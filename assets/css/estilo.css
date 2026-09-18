@@ -23,7 +23,7 @@ header {
 }
 
 /* menu lateral */
-nav {
+.menu-lateral {
     height: 100vh;
     width: 15rem;
     background-color: #eee;
