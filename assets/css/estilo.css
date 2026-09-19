@@ -7,16 +7,38 @@
 }
 
 header {
-    height: 2rem;
+    min-height: 2.5rem; /* min-height para flexibilizar sem quebrar */
     display: flex;
     align-items: center;
-    align-content: center;
-    padding: .5rem;
+    padding: 0.5rem 1rem;
     background-color: #674ea7;
     color: white;
 }
 
+/* remove o fundo claro do Bootstrap na navbar */
+header nav.navbar {
+    background-color: transparent !important;
+    flex-grow: 1;
+    margin: 0 1rem;
+    padding: 0;
+}
+
+header .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+/* 4. Estiliza a área de pesquisa no header */
+header .form-pesquisa-header {
+    background-color: transparent;
+    color: white;
+}
+
+header .campo-busca label {
+    color: white;
+}
+
 .titulo {
+    font-size: 1.25rem;
     flex: 1;
     color: white;
     text-align: center;
@@ -26,6 +48,13 @@ header {
 .menu-lateral {
     height: 100vh;
     width: 15rem;
+    background-color: #eee;
+    padding: 0.5rem;
+}
+
+/* navbar */
+
+.navbar navbar-expand-lg bg-body-tertiary {
     background-color: #eee;
     padding: 0.5rem;
 }
@@ -47,10 +76,9 @@ li {
 }
 
 .form-pesquisa-filtro {
-    position: absolute;
-    top: 5rem;
-    right: 1.5rem;
+    position: static;
     display: flex;
+    justify-content: flex-end;
     gap: 0.5rem;
     align-items: center;
 }
@@ -105,6 +133,25 @@ section {
     gap: .8rem;
     padding: 1rem;
     margin-top: 2.5rem;
+}
+
+.banner-apresentacao {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.imagem-banner {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.texto-apresentacao {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
 }
 
 @media (max-width: 576px) { /* EXTRA SMALL - até 576px */

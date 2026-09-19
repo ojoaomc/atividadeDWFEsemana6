@@ -15,7 +15,7 @@
         <!-- FORMULÁRIO DE PESQUISA NO HEADER -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -24,9 +24,9 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Features</a>
-                        <a class="nav-link" href="#">Pricing</a>
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#">Eventos</a>
+                        <a class="nav-link" href="#">Pontos turísticos</a>
+                        <a class="nav-link" href="#">Contato</a>
                     </div>
                 </div>
             </div>
@@ -65,43 +65,50 @@
             </ul>
         </nav>
 
-        <form class="form-pesquisa-filtro">
-            <div class="campo-filtro">
-                <label for="filtro-tipo" class="sr-only">Filtrar por:</label>
-                <input type="text" id="filtro-tipo" name="filtro" placeholder="Ex: Cachoeira, Museu...">
+        <main class="conteudo-principal">
+
+            <form class="form-pesquisa-filtro">
+                <div class="campo-filtro">
+                    <label for="filtro-tipo" class="sr-only">Filtrar por:</label>
+                    <input type="text" id="filtro-tipo" name="filtro" placeholder="Ex: Cachoeira, Museu...">
+                </div>
+                <button type="submit" class="botao-pesquisa">Buscar</button>
+            </form>
+
+            <section class="banner-apresentacao">
+                <img src="./assets/img/logoPrincipal.png" class="img-fluid imagem-banner" alt="Igreja da Pampulha">
+                <p class="texto-apresentacao">
+                    O GuiaBH nasce com o propósito de transformar a forma como você explora Belo Horizonte. Muito além
+                    dos roteiros tradicionais, nossa plataforma foi pensada para quem deseja diversificar as
+                    experiências na capital mineira, conectando moradores e visitantes à rica pluralidade cultural,
+                    gastronômica e natural da cidade.
+                </p>
+            </section>
+
+            <div id="cartoes" class="container-cartoes">
+                <div class="cartao">
+                    <img class="imagem-do-cartao" src="./assets/img/trilha.png" alt="Trilhas">
+                    <section class="corpo-do-cartao">
+                        <p class="nome-da-opcao">Trilhas em BH</p>
+                        <p class="descricao-da-opcao">Veja opções de trilhas em Belo Horizonte.</p>
+                    </section>
+                </div>
+                <div class="cartao">
+                    <img class="imagem-do-cartao" src="./assets/img/igrejaPampulha.png" alt="Arquitetura">
+                    <section class="corpo-do-cartao">
+                        <p class="nome-da-opcao">Arquitetura</p>
+                        <p class="descricao-da-opcao">Conheça a arquitetura de Belo Horizonte.</p>
+                    </section>
+                </div>
+                <div class="cartao">
+                    <img class="imagem-do-cartao" src="./assets/img/ccbb.png" alt="Cultura">
+                    <section class="corpo-do-cartao">
+                        <p class="nome-da-opcao">Cultura</p>
+                        <p class="descricao-da-opcao">Veja as opções de acesso à cultura em Belo Horizonte.</p>
+                    </section>
+                </div>
             </div>
 
-            <button type="submit" class="botao-pesquisa">Buscar</button>
-        </form>
-
-        <main id="cartoes" class="container">
-            <div class="cartao">
-                <img class="imagem-do-cartao" src="./assets/img/trilha.png">
-                <section class="corpo-do-cartao">
-                    <p class="nome-da-opcao">
-                        Trilhas em BH
-                    </p>
-                    <p class="descricao-da-opcao">Veja opções de trilhas em Belo Horizonte.</p>
-                </section>
-            </div>
-            <div class="cartao">
-                <img class="imagem-do-cartao" src="./assets/img/igrejaPampulha.png">
-                <section class="corpo-do-cartao">
-                    <p class="nome-da-opcao">
-                        Arquitetura
-                    </p>
-                    <p class="descricao-da-opcao">Conheça a arquitetura de Belo Horizonte.</p>
-                </section>
-            </div>
-            <div class="cartao">
-                <img class="imagem-do-cartao" src="./assets/img/ccbb.png">
-                <section class="corpo-do-cartao">
-                    <p class="nome-da-opcao">
-                        Cultura
-                    </p>
-                    <p class="descricao-da-opcao">Veja as opções de acesso à cultura em Belo Horizonte.</p>
-                </section>
-            </div>
         </main>
     </section>
     <footer>&copy, GuiaBH, 2026</footer>
