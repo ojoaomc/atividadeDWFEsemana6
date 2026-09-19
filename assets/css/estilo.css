@@ -126,7 +126,7 @@ section {
     color: grey;
 }
 
-.container {
+.container-cartoes {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
@@ -152,6 +152,12 @@ section {
     font-size: 1rem;
     color: #333;
     line-height: 1.5;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
 }
 
 @media (max-width: 576px) { /* EXTRA SMALL - até 576px */
